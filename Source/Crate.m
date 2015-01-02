@@ -39,7 +39,9 @@
             effect = [CCEffectHue effectWithHue:-130];
             break;
         case FireworkColorYellow:
-            effect = [CCEffectHue effectWithHue:60];
+            effect = [CCEffectStack effects:[CCEffectHue effectWithHue:60],
+                                            [CCEffectBrightness effectWithBrightness:0.5],
+                                            nil];
             break;
         case FireworkColorWhite:
             effect = [CCEffectBrightness effectWithBrightness:1.0];
