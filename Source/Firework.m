@@ -71,7 +71,7 @@
     _sprite = nil;
     
     [_particleSystem resetSystem];
-    [self schedule:@selector(updateBrightness) interval:0.01];
+    [self schedule:@selector(updateBrightness) interval:0.01 repeat:100 delay:0.0];
     [[OALSimpleAudio sharedInstance] playEffect:@"Sounds/explosion.wav"];
 }
 
